@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import BigCard from "./dist/BigCard";
+import BigCard from "./lib/BigCard";
 
-ReactDOM.render(<BigCard />, document.getElementById("root"));
+ReactDOM.render(<BigCard>하하하하</BigCard>, document.getElementById("root"));
  
