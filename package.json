@@ -41,12 +41,16 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "publish:npm": "rm -rf dist && mkdir dist && babel src/lib -d dist --copy-files"
+    "publish:npm": "rm -rf dist && mkdir dist && babel lib -d dist --copy-files"
   },
   "keywords": [
     "react",
     "bigcard"
   ],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guripong/react-bigcard.git"
+  },
+  "author": "guripong",
   "license": "MIT"
 }
