@@ -1,6 +1,6 @@
 {
   "name": "react-bigcard",
-  "version": "1.0.4",
+  "version": "1.0.3",
   "private": false,
   "babel": {
     "presets": [
@@ -12,9 +12,7 @@
   "module": "dist/BigCard.js",
   "main": "dist/BigCard.js",
   "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "^4.0.3"
+    "node-sass": "^4.14.1"
   },
   "eslintConfig": {
     "extends": [
@@ -39,6 +37,9 @@
     "@babel/preset-react": "^7.16.7",
     "@types/react": "^17.0.44",
     "@types/react-dom": "^17.0.16",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^4.0.3",
     "typescript": "^4.6.3"
   },
   "scripts": {
@@ -46,7 +47,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "publish:npm": "rm -rf dist && mkdir dist && babel lib -d dist --copy-files"
+    "publish:npm": "rm -rf dist && mkdir dist && babel lib -d dist --copy-files",
+    "scsstocss": "node-sass --output-style compressed lib/ -o dist/",
+    "tsc": "rmdir dist /s /q && tsc && npm run scsstocss"
   },
   "keywords": [
     "react",
@@ -57,5 +60,12 @@
     "url": "https://github.com/guripong/react-bigcard.git"
   },
   "author": "guripong",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">= 17",
+    "react-dom": ">= 17"
+  },
+  "engines": {
+    "node": ">= 14"
+  }
 }

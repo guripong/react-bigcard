@@ -1,4 +1,5 @@
 ```
+import 'react-bigcard/dist/BigCard.css';
 const BigCard = require('react-bigcard');
 
 const App = ()=>{

@@ -27,7 +27,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
 var react_2 = require("react");
-require("./BigCard.css");
 var BigCard = (0, react_2.forwardRef)(function (_a, ref) {
     var title = _a.title, style = _a.style, hide = _a.hide, props = __rest(_a, ["title", "style", "hide"]);
     var _b = (0, react_2.useState)(function () { return hide || false; }), hidden = _b[0], setHidden = _b[1];

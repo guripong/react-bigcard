@@ -1,6 +1,5 @@
 import React from "react";
 import { forwardRef, ReactElement, useState } from "react";
-import "./BigCard.css";
 
 interface BigCardProps {
   title: () => JSX.Element;

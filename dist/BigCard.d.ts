@@ -1,6 +1,5 @@
 import React from "react";
 import { ReactElement } from "react";
-import "./BigCard.css";
 interface BigCardProps {
     title: () => JSX.Element;
     style?: React.CSSProperties;

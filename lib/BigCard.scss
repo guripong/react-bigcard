@@ -1,0 +1,38 @@
+.BigCard {
+  width: 100%;
+  .defaultStyle {
+    width: calc(100% - 30px);
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .hidecontents {
+    color: gray;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    &:hover {
+      color: #333;
+    }
+    .arrow {
+      height: 25px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+    }
+  }
+  .titleWrap {
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    color: #333;
+  }
+  .childrenWrap {
+    width: 100%;
+  }
+}

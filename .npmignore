@@ -1,0 +1,7 @@
+lib/
+node_modules/
+index.tsx
+tsconfig.json
+
+.gitignore
+.git
